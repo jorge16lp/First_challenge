@@ -176,6 +176,16 @@ img:hover {
     to { width: 8rem; height: 8rem; }
   }
 
+  @keyframes fontSizeHover {
+    from { font-size: 0.95rem; }
+    to { font-size: 1.15rem; }
+  }
+
+  label:hover {
+    animation: fontSizeHover 0.5s;
+    animation-fill-mode: forwards;
+  }
+
   header {
     font-size: 0.7rem;
   }
@@ -214,7 +224,7 @@ img:hover {
   }
 
   body {
-    grid-template: 4rem 5rem 15rem 1fr 5rem / 1fr 7fr 1fr;
+    grid-template: 4rem 5rem 14rem 1fr 5rem / 1fr 7fr 1fr;
   }
 
   header {
@@ -226,7 +236,7 @@ img:hover {
     grid-row: 3;
     grid-column: span 3;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
   }
 
   section {
@@ -253,7 +263,6 @@ img:hover {
   }
 
   main {
-    margin-top: 20px;
     grid-row: 4;
     grid-column: span 3;
     grid-template-columns: repeat(auto-fill, 8rem);
@@ -265,9 +274,19 @@ img:hover {
 }
 
 @media (max-width: 400px) {
+  @keyframes fontSizeHover {
+    from { font-size: 0.6rem; }
+    to { font-size: 0.8rem; }
+  }
+
+  label:hover {
+    animation: fontSizeHover 0.5s;
+    animation-fill-mode: forwards;
+  }
+
   fieldset {
     font-size: 0.6rem;
-    height: 13rem;
+    height: 11rem;
   }
 
   fieldset legend {
