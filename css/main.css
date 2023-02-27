@@ -165,22 +165,18 @@ img:hover {
   animation: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   @keyframes hover {
     from { width: 7rem; height: 7rem;}
     to { width: 8rem; height: 8rem; }
   }
 
-  body {
-    grid-template: 4rem 13rem 1fr 4rem / 10rem 2fr 1fr;
-    gap: 15px;
+  header {
+    font-size: 0.7rem;
   }
 
-  aside {
-    grid-row: 2;
-    grid-column: span 3;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  input {
+    width: 13rem;
   }
 
   img {
@@ -194,13 +190,52 @@ img:hover {
   }
 
   main {
-    grid-row: 3;
-    grid-column: span 3;
     grid-template-columns: repeat(auto-fill, 10rem);
   }
+}
 
-  .logo {
-    width: 5.25rem;
-    height: 1.6rem;
+@media (max-width: 500px) {
+  @keyframes hover {
+    from { width: 7rem; height: 7rem;}
+    to { width: 8rem; height: 8rem; }
+  }
+
+  body {
+    grid-template: 4rem 13rem 1fr 5rem / 9rem 1fr 1fr;
+  }
+
+  header {
+    font-size: 0.6rem;
+  }
+
+  aside {
+    grid-row: 2;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  input {
+    width: 10rem;
+  }
+
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  img:hover {
+    animation: hover 0.7s;
+    animation-fill-mode: forwards;
+  }
+
+  main {
+    grid-row: 3;
+    grid-column: span 3;
+    grid-template-columns: repeat(auto-fill, 8rem);
+  }
+
+  footer p {
+    text-align: center;
   }
 }
