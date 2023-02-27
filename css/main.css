@@ -274,6 +274,7 @@ img:hover {
 
 @media (max-width: 400px) {
   fieldset {
+    font-size: 10px;
     height: 18rem;
   }
 }
