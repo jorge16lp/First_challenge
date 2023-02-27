@@ -5,8 +5,8 @@
 }
 
 @keyframes hover {
-  from { width: 220px; height: 220px;}
-  to { width: 230px; height: 230px; }
+  from { width: 14rem; height: 14rem;}
+  to { width: 15rem; height: 15rem; }
 }
 
 @keyframes fontSize {
@@ -133,8 +133,8 @@ p {
 }
 
 img {
-  width: 220px;
-  height: 220px;
+  width: 14rem;
+  height: 14rem;
   margin: 1rem;
   box-shadow: 2px 2px 6px 1px;
   border-radius: 10px;
