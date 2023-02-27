@@ -110,6 +110,10 @@ p {
   margin: 1rem;
 }
 
+div p {
+  text-align: center;
+}
+
 .characterName {
   margin-top: 0px;
   align-self: center;
@@ -205,12 +209,12 @@ img:hover {
 
 @media (max-width: 600px) {
   @keyframes hover {
-    from { width: 7rem; height: 7rem;}
-    to { width: 8rem; height: 8rem; }
+    from { width: 5rem; height: 5rem;}
+    to { width: 6rem; height: 6rem; }
   }
 
   body {
-    grid-template: 4rem 5rem 13rem 1fr 5rem / 1fr 7fr 1fr;
+    grid-template: 4rem 5rem 15rem 1fr 5rem / 1fr 7fr 1fr;
   }
 
   header {
@@ -227,6 +231,7 @@ img:hover {
 
   fieldset {
     font-size: 15px;
+    height: 11rem;
   }
 
   fieldset legend {
@@ -242,6 +247,10 @@ img:hover {
     width: 20rem;
   }
 
+  div p {
+    font-size: 0.7rem;
+  }
+
   img {
     width: 5rem;
     height: 5rem;
@@ -253,6 +262,7 @@ img:hover {
   }
 
   main {
+    margin-top: 10px;
     grid-row: 4;
     grid-column: span 3;
     grid-template-columns: repeat(auto-fill, 8rem);
