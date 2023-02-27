@@ -9,7 +9,7 @@
   to { width: 15rem; height: 15rem; }
 }
 
-@keyframes fontSize {
+@keyframes fontSizeHover {
   from { font-size: 1rem; }
   to { font-size: 1.2rem; }
 }
@@ -46,7 +46,7 @@ input {
 }
 
 label:hover {
-  animation: fontSize 0.5s;
+  animation: fontSizeHover 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -266,11 +266,11 @@ img:hover {
 
 @media (max-width: 400px) {
   fieldset {
-    font-size: 0.5rem;
-    height: 18rem;
+    font-size: 0.6rem;
+    height: 13rem;
   }
 
   fieldset legend {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
