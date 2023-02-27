@@ -27,6 +27,9 @@ async function fetchAsyncAwaitAndShow(url = 'https://rickandmortyapi.com/api/cha
   }
 }
 
+
+
+
 function doSearch() {
   page = 1;
   const searchText = document.getElementById('search').value;
@@ -35,6 +38,9 @@ function doSearch() {
       + '&name=' + searchText;
   fetchAsyncAwaitAndShow(url);
 }
+
+
+
 
 // FILTERS
 // status filter

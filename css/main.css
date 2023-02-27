@@ -46,7 +46,7 @@ input {
 }
 
 label:hover {
-  animation: fontSize 0.7s;
+  animation: fontSize 0.5s;
   animation-fill-mode: forwards;
 }
 
