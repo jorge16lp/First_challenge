@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jorge López">
+  <meta name="description" content="Proyecto para practicar">
+  <meta name="keywords" content="HTML, CSS, JS, Rick & Morty, front, search">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PRACTICE</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body onload="fetchAsyncAwaitAndShow()">
+
+  <div class="logo_container">
+    <img src="img/logo.png" class="logo">
+  </div>
+
+  <header>
+    <h1>First Challenge</h1>
+
+  </header>
+
+  <section>
+    <label for="search"><input id="search" type="text" placeholder="Search..." onkeyup="doSearch()"></label>
+  </section>
+
+  <aside>
+    <fieldset>
+      <legend>Status Filter</legend>
+      <label for="statusFilterAlive"><input id="statusFilterAlive" type="checkbox" onclick="statusFilter('alive')">Alive</label>
+      <label for="statusFilterDead"><input id="statusFilterDead" type="checkbox" onclick="statusFilter('dead')">Dead</label>
+      <label for="statusFilterUnknown"><input id="statusFilterUnknown" type="checkbox" onclick="statusFilter('unknown')">Unknown</label>
+    </fieldset>
+    <fieldset>
+      <legend>Specie Filter</legend>
+      <label for="specieFilterHumanoid"><input id="specieFilterHumanoid" type="checkbox" onclick="specieFilter('human')">Humanoid</label>
+      <label for="specieFilterAlien"><input id="specieFilterAlien" type="checkbox" onclick="specieFilter('alien')">Alien</label>
+      <label for="specieFilterRobot"><input id="specieFilterRobot" type="checkbox" onclick="specieFilter('robot')">Robot</label>
+      <label for="specieFilterMythologicalCreature"><input id="specieFilterMythologicalCreature" type="checkbox" onclick="specieFilter('mythological')">Mythological Creature</label>
+      <label for="specieFilterPoopybutthole"><input id="specieFilterPoopybutthole" type="checkbox" onclick="specieFilter('poopybutthole')">Poopybutthole</label>
+      <label for="specieFilterCronenberg"><input id="specieFilterCronenberg" type="checkbox" onclick="specieFilter('cronenberg')">Cronenberg</label>
+      <label for="specieFilterDisease"><input id="specieFilterDisease" type="checkbox" onclick="specieFilter('disease')">Disease</label>
+      <label for="specieFilterUnknown"><input id="specieFilterUnknown" type="checkbox" onclick="specieFilter('unknown')">Unknown</label>
+    </fieldset>
+  </aside>
+
+  <main class="main">
+
+  </main>
+
+  <footer>
+    <p>Made by Jorge López Peláez - Academy Frontend Software at Empathy.co</p>
+  </footer>
+</body>
+
+</html>

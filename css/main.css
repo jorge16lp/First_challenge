@@ -1,0 +1,166 @@
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes hover {
+  from { width: 220px; height: 220px;}
+  to { width: 230px; height: 230px; }
+}
+
+@keyframes fontSize {
+  from { font-size: 1rem; }
+  to { font-size: 1.2rem; }
+}
+
+body {
+  background-color: cadetblue;
+  color: black;
+  display: grid;
+  grid-template: 80px 1fr 60px / 0.6fr 2fr 1fr;
+  gap: 15px;
+}
+
+header {
+  background-color: bisque;
+  border-radius: 10px;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 1px;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 1px;
+}
+
+label:hover {
+  animation: fontSize 0.7s;
+  animation-fill-mode: forwards;
+}
+
+footer {
+  background-color: bisque;
+  border-radius: 10px;
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 1px;
+
+  margin-bottom: 10px;
+}
+
+aside {
+  border-radius: 10px;
+  grid-row: 2;
+}
+
+fieldset {
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset legend {
+  font-size: 1.4rem;
+}
+
+aside fieldset input {
+  width: auto;
+  height: auto;
+  margin-right: 15px;
+}
+
+main {
+  background-color: bisque;
+  border-radius: 10px;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  grid-auto-columns: 1fr;
+  justify-content: space-evenly;
+  margin-right: 10px;
+  box-shadow: 3px 3px 5px 1px;
+}
+
+div {
+  background-color: white;
+  border-radius: 15px;
+  margin: 15px 10px 20px 10px;
+  box-shadow: 5px 5px 10px 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 1rem;
+}
+
+.characterName {
+  margin-top: 0px;
+  align-self: center;
+}
+
+.characterStatus_Alive {
+  background-color: #aee75b;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.characterStatus_Dead {
+  background-color: #f35a5a;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.characterStatus_unknown {
+  background-color: #939393;
+  text-align: center;
+  border-radius: 10px;
+}
+
+img {
+  width: 220px;
+  height: 220px;
+  margin: 1rem;
+  box-shadow: 2px 2px 6px 1px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+img:hover {
+  animation: hover 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.logo_container {
+  background-color: cadetblue;
+  margin: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 170px;
+  height: 50px;
+  border-radius: 30px;
+  animation: blink 1.2s ease-in-out 0.4s;
+}
+
+.logo:hover {
+  animation: none;
+}
