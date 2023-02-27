@@ -226,7 +226,7 @@ img:hover {
     grid-row: 3;
     grid-column: span 3;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
   }
 
   section {
