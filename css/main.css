@@ -261,7 +261,7 @@ img:hover {
   }
 
   main {
-    margin-top: 15px;
+    margin-top: 20px;
     grid-row: 4;
     grid-column: span 3;
     grid-template-columns: repeat(auto-fill, 8rem);
@@ -269,5 +269,11 @@ img:hover {
 
   footer p {
     text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  fieldset {
+    height: 18rem;
   }
 }
