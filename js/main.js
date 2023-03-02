@@ -223,7 +223,7 @@ function debounce(func, wait = 500) {
     timeout = setTimeout(() => func.apply(this, args), wait);
   };
 }
-const processChange = debounce(() => doSearch());
+const searchChange = debounce(() => doSearch());
 
 
 
