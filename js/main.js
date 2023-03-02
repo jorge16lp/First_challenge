@@ -1,5 +1,4 @@
 async function fetchAsyncAwaitAndShow(url = 'https://rickandmortyapi.com/api/character/?') {//'https://rickandmortyapi.com/api/character/?page=1') {
-  //let response = await fetch('https://rickandmortyapi.com/api/character/?page=' + page + '&name=rick');
   let response = await fetch(url);
   let result = await response.json();
   //console.log(result);
