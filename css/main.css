@@ -9,11 +9,6 @@
   to { width: 15rem; height: 15rem; }
 }
 
-@keyframes fontSizeHover {
-  from { font-size: 1rem; }
-  to { font-size: 1.2rem; }
-}
-
 body {
   background-color: darkgrey;
   color: black;
@@ -47,8 +42,7 @@ input {
 }
 
 label:hover {
-  animation: fontSizeHover 0.5s;
-  animation-fill-mode: forwards;
+  font-weight: bold;
 }
 
 footer {
@@ -98,7 +92,7 @@ main {
 }
 
 div {
-  background-image: linear-gradient(white, bisque, bisque, bisque, bisque, white);
+  background-image: linear-gradient(white, bisque, bisque, bisque, bisque, bisque, bisque, white);
   border-radius: 10px;
   border-top: 0px;
   margin: 15px 10px 20px 10px;
@@ -178,14 +172,8 @@ img:hover {
     to { width: 8rem; height: 8rem; }
   }
 
-  @keyframes fontSizeHover {
-    from { font-size: 0.95rem; }
-    to { font-size: 1.15rem; }
-  }
-
-  label:hover {
-    animation: fontSizeHover 0.5s;
-    animation-fill-mode: forwards;
+  div {
+    max-height: 16.15rem;
   }
 
   header {
@@ -246,6 +234,10 @@ img:hover {
     grid-column: span 3;
   }
 
+  div {
+    max-height: 12.82rem;
+  }
+
   input {
     width: 20rem;
   }
@@ -276,16 +268,6 @@ img:hover {
 }
 
 @media (max-width: 400px) {
-  @keyframes fontSizeHover {
-    from { font-size: 0.6rem; }
-    to { font-size: 0.8rem; }
-  }
-
-  label:hover {
-    animation: fontSizeHover 0.5s;
-    animation-fill-mode: forwards;
-  }
-
   fieldset {
     font-size: 0.6rem;
     height: 12.3rem;
