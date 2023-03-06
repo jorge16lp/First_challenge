@@ -46,7 +46,7 @@ label:hover {
 }
 
 footer {
-  background-color: bisque;
+  background-color: lightgrey;
   border-radius: 10px;
   grid-column: span 3;
   display: flex;
