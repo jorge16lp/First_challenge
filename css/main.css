@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color: bisque;
+  background-color: lightgrey;
   border-radius: 10px;
   grid-column: 2;
   display: flex;
@@ -80,7 +80,7 @@ aside fieldset input {
 }
 
 main {
-  background-color: bisque;
+  background-color: lightgrey;
   border-radius: 10px;
   grid-column: span 2;
   display: grid;
@@ -92,7 +92,7 @@ main {
 }
 
 div {
-  background-image: linear-gradient(white, bisque, bisque, bisque, bisque, bisque, bisque, white);
+  background-image: linear-gradient(white, lightgrey, lightgrey, lightgrey, lightgrey, lightgrey, lightgrey, white);
   border-radius: 10px;
   margin: 15px 10px 20px 10px;
   display: flex;
