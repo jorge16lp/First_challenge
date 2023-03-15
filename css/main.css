@@ -25,7 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 6px 3px dimgrey;
+  box-shadow: 0 2px 6px 3px dimgrey;
 }
 
 section {
@@ -38,7 +38,7 @@ input {
   width: 20rem;
   height: 2rem;
   border-radius: 10px;
-  box-shadow: 0px 2px 6px 3px dimgrey;
+  box-shadow: 0 2px 6px 3px dimgrey;
 }
 
 label:hover {
@@ -51,7 +51,7 @@ footer {
   grid-column: span 3;
   display: flex;
   justify-content: center;
-  box-shadow: 0px 2px 6px 3px dimgrey;
+  box-shadow: 0 2px 6px 3px dimgrey;
   margin-bottom: 10px;
 }
 
@@ -88,7 +88,7 @@ main {
   grid-auto-columns: 1fr;
   justify-content: space-evenly;
   margin-right: 10px;
-  box-shadow: 0px 2px 6px 3px dimgrey;
+  box-shadow: 0 2px 6px 3px dimgrey;
 }
 
 div {
@@ -110,7 +110,7 @@ div p {
 }
 
 .characterName {
-  margin-top: 0px;
+  margin-top: 0;
   align-self: center;
 }
 
@@ -136,7 +136,7 @@ img {
   width: 14rem;
   height: 14rem;
   margin: 1rem;
-  box-shadow: 0px 2px 6px 3px lightslategrey;
+  box-shadow: 0 2px 6px 3px lightslategrey;
   border-radius: 10px;
   align-self: center;
 }
@@ -148,11 +148,11 @@ img:hover {
 
 .logo_container {
   background-image: none;
-  margin: 0px 0px 0px 0px;
-  box-shadow: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
+  box-shadow: 0 0 0 0;
   display: flex;
   justify-content: center;
-  border: 0px;
+  border: 0;
 }
 
 .logo {
@@ -160,7 +160,7 @@ img:hover {
   height: 2.8rem;
   border-radius: 30px;
   animation: blink 1.2s ease-in-out 0.4s;
-  box-shadow: 0px 0px 10px 4px ghostwhite;
+  box-shadow: 0 0 10px 4px ghostwhite;
 }
 
 .logo:hover {
